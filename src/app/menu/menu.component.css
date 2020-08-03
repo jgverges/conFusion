@@ -1,7 +1,12 @@
 
-
+.example-card {
+  max-width: 80%;
+}
 
 .example-header-image {
-    background-image: url('../../assets/images/uthappizza.png');
-    background-size: cover;
+/*     background-image: url('../../assets/images/uthappizza.png');
+ */    background-size: cover;
   }
+ mat-card-content {
+   margin-left: 55px;
+ }
