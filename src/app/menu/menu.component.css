@@ -10,3 +10,6 @@
  mat-card-content {
    margin-left: 55px;
  }
+ mat-grid-tile {
+   align-items:initial !important ;
+ }

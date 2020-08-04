@@ -10,11 +10,13 @@ import { MatIconModule} from '@angular/material/icon';
 import { MatListModule} from '@angular/material/list';
 import { MenuComponent } from './menu/menu.component';
 import {MatCardModule} from '@angular/material/card';
+import { DishdetailComponent } from './menu/dishdetail/dishdetail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    DishdetailComponent
   ],
   imports: [
     BrowserModule,
