@@ -9,8 +9,10 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { MatIconModule} from '@angular/material/icon';
 import { MatListModule} from '@angular/material/list';
 import { MenuComponent } from './menu/menu.component';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule} from '@angular/material/card';
 import { DishdetailComponent } from './menu/dishdetail/dishdetail.component';
+
+import { DishService } from './services/dish.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,7 @@ import { DishdetailComponent } from './menu/dishdetail/dishdetail.component';
     MatListModule,
     MatToolbarModule
   ],
-  providers: [],
+  providers: [ DishService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
