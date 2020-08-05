@@ -4,7 +4,7 @@ import { Dish } from 'src/app/shared/dish';
 @Component({
   selector: 'app-dishdetail',
   templateUrl: './dishdetail.component.html',
-  styleUrls: ['./dishdetail.component.css']
+  styleUrls: ['./dishdetail.component.scss']
 })
 export class DishdetailComponent implements OnInit {
     
@@ -13,6 +13,7 @@ export class DishdetailComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

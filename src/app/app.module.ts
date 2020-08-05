@@ -3,27 +3,40 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatToolbarModule} from '@angular/material/toolbar';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import {MatGridListModule} from '@angular/material/grid-list';
-import { MatIconModule} from '@angular/material/icon';
-import { MatListModule} from '@angular/material/list';
 import { MenuComponent } from './menu/menu.component';
-import { MatCardModule} from '@angular/material/card';
 import { DishdetailComponent } from './menu/dishdetail/dishdetail.component';
 
 import { DishService } from './services/dish.service';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+// Material and Font awesome
+import { MatButtonModule} from '@angular/material/button';
+import { MatGridListModule} from '@angular/material/grid-list';
+import { MatIconModule} from '@angular/material/icon';
+import { MatListModule} from '@angular/material/list';
+import { MatToolbarModule} from '@angular/material/toolbar';
+import { MatCardModule} from '@angular/material/card';
+
+
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+ 
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    DishdetailComponent
+    DishdetailComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
+    FontAwesomeModule ,
+    MatButtonModule,
     MatCardModule,
     MatGridListModule,
     MatIconModule,
