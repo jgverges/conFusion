@@ -6,7 +6,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
+// services
 import { DishService } from './services/dish.service';
+import { PromotionService } from './services/promotion.service';
 // Components
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -52,7 +54,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatListModule,
     MatToolbarModule
   ],
-  providers: [ DishService ],
+  providers: [ DishService, PromotionService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
