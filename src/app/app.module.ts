@@ -4,12 +4,17 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MenuComponent } from './menu/menu.component';
-import { DishdetailComponent } from './menu/dishdetail/dishdetail.component';
 
+import { AppRoutingModule } from './app-routing/app-routing.module';
 import { DishService } from './services/dish.service';
+// Components
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+import { DishdetailComponent } from './menu/dishdetail/dishdetail.component';
+import { MenuComponent } from './menu/menu.component';
 // Material and Font awesome
 import { MatButtonModule} from '@angular/material/button';
 import { MatGridListModule} from '@angular/material/grid-list';
@@ -29,9 +34,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MenuComponent,
     DishdetailComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
