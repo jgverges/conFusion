@@ -11,7 +11,7 @@ import { DishService } from 'src/app/services/dish.service';
 })
 export class DishdetailComponent implements OnInit {
     
-  dishdetail: Dish;
+  dish: Dish;
 
   constructor( private dishService: DishService,
                private route: ActivatedRoute,
@@ -20,7 +20,8 @@ export class DishdetailComponent implements OnInit {
   ngOnInit(): void {
 
     let id= this.route.snapshot.params['id'];
-    this.dishdetail = this.dishService.getDish(id);
+    this.dish = this.dishService.getDish(id);
+    console.warn(this.dish.comments);
   
   }
 
