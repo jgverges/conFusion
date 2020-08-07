@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 // services
 import { DishService } from './services/dish.service';
 import { PromotionService } from './services/promotion.service';
+import { LeaderService } from './services/leader.service';
 // Components
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -24,10 +25,11 @@ import { MatIconModule} from '@angular/material/icon';
 import { MatListModule} from '@angular/material/list';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatCardModule} from '@angular/material/card';
-
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LoginComponent } from './login/login.component';
  
 
 @NgModule({
@@ -39,7 +41,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FooterComponent,
     HomeComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    LoginComponent
   ],
   imports: [
     AppRoutingModule,
@@ -49,12 +52,20 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FontAwesomeModule ,
     MatButtonModule,
     MatCardModule,
+    MatDialogModule,
     MatGridListModule,
     MatIconModule,
     MatListModule,
     MatToolbarModule
   ],
-  providers: [ DishService, PromotionService ],
+  providers: [ 
+    DishService, 
+    PromotionService, 
+    LeaderService 
+  ],
+  entryComponents: [
+    MatDialogModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,9 +1,12 @@
 <mat-toolbar color="primary">
     <span><img src="/assets/images/logo.png" height=30 width=41></span>
     <a mat-button routerLink= "/home"  routerLinkActive="active"><span class="material-icons"> home </span> Home</a>
-    <a mat-button routerLink= "/about" routerLinkActive="active"><span class="material-icons"> info  </span> About</a>
+    <a mat-button routerLink= "/aboutus" routerLinkActive="active"><span class="material-icons"> info  </span> About</a>
     <a mat-button routerLink= "/menu"  routerLinkActive="active"><span class="material-icons"> format_list_bulleted  </span> Menu</a>
-    <a mat-button routerLink= "/contact" routerLinkActive="active"><span class="material-icons"> contacts  </span> Contact</a>
+    <a mat-button routerLink= "/contactus" routerLinkActive="active"><span class="material-icons"> contacts  </span> Contact</a>
+    <span class="flex-spacer"></span>
+    <a mat-button (click)="openLoginForm()"><span class="material-icons">login</span>Login></a>
+    <!-- Icons font awesome:   <span class="fa fa-sign-in fa-lg">Login</span> -->
   </mat-toolbar>
   
   <div class="container jumbotron"
