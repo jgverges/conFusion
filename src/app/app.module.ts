@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 // services
 import { DishService } from './services/dish.service';
 import { PromotionService } from './services/promotion.service';
@@ -24,6 +25,8 @@ import { MatGridListModule} from '@angular/material/grid-list';
 import { MatIconModule} from '@angular/material/icon';
 import { MatListModule} from '@angular/material/list';
 import { MatToolbarModule} from '@angular/material/toolbar';
+import { MatSelectModule} from '@angular/material/select';
+import { MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { MatCardModule} from '@angular/material/card';
 import { MatDialogModule} from '@angular/material/dialog';
 import { MatFormFieldModule} from '@angular/material/form-field';
@@ -63,7 +66,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatIconModule,
     MatInputModule,
     MatListModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatSelectModule,
+    MatSlideToggleModule,
+    ReactiveFormsModule
   ],
   providers: [ 
     DishService, 
