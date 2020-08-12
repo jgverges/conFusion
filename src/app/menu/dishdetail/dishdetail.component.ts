@@ -21,10 +21,7 @@ export class DishdetailComponent implements OnInit {
 
     let id= this.route.snapshot.params['id'];
     this.dishService.getDish(id)
-      .then( dish => {
-        this.dish =dish;
-      console.log(this.dish.comments);
-      });
+      .then( dish => this.dish =dish );
     }
 
   goBack() {
