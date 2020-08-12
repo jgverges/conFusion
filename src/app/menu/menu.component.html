@@ -1,7 +1,14 @@
 <mat-grid-list cols="2" rowHeight="200px">
     
-    <mat-grid-tile *ngFor= "let dish of dishes"  [routerLink]="['/dishdetail', dish.id]">
-        <img src="{{dish.image}}" height="200px" alt="{{dish.name}}" >
-        <mat-grid-tile-footer>{{dish.name | uppercase}}</mat-grid-tile-footer>
-    </mat-grid-tile>
+    <div fxFlex *ngIf="dishes">
+        <mat-grid-tile *ngFor= "let dish of dishes"  [routerLink]="['/dishdetail', dish.id]">
+            <img src="{{dish.image}}" height="200px" alt="{{dish.name}}" >
+            <mat-grid-tile-footer>{{dish.name | uppercase}}</mat-grid-tile-footer>
+        </mat-grid-tile>
+    </div>
+
+    <div [hidden]="dishes">
+        <mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>
+      </div>
+      
   </mat-grid-list>
