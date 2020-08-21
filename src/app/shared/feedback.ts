@@ -8,4 +8,4 @@ export class Feedback {
     contacttype: string;
     message: string;
 }
- export const ContactType = ['Nome', 'Telf', 'Email'];
+ export const ContactType = ['None', 'Telf', 'Email'];

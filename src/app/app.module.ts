@@ -24,9 +24,10 @@ import { MatButtonModule} from '@angular/material/button';
 import { MatGridListModule} from '@angular/material/grid-list';
 import { MatIconModule} from '@angular/material/icon';
 import { MatListModule} from '@angular/material/list';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatSelectModule} from '@angular/material/select';
+import { MatSliderModule} from '@angular/material/slider';
 import { MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { MatCardModule} from '@angular/material/card';
 import { MatDialogModule} from '@angular/material/dialog';
@@ -69,6 +70,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatListModule,
     MatProgressSpinnerModule,
     MatSelectModule,
+    MatSliderModule,
     MatSlideToggleModule,
     MatToolbarModule,
     ReactiveFormsModule
