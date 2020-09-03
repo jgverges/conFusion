@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+/* import { HttpModule } from '@angular/http';
+ */import { baseURL } from './shared/baseurl';
 import { ReactiveFormsModule } from '@angular/forms';
 // services
 import { DishService } from './services/dish.service';
@@ -59,7 +62,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FlexLayoutModule,
     FontAwesomeModule,
     FormsModule,
-    MatButtonModule,
+    HttpClientModule,
+/*     HttpModule,
+ */    MatButtonModule,
     MatCardModule,
     MatCheckboxModule,
     MatDialogModule,
@@ -78,7 +83,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   providers: [ 
     DishService, 
     PromotionService, 
-    LeaderService 
+    LeaderService,
+    { provide: 'BaseURL', useValue : baseURL} 
   ],
   entryComponents: [
     MatDialogModule

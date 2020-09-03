@@ -1,0 +1,4 @@
+
+// watch with 2000 ms delay
+
+json-server --watch db.json -d 2000
