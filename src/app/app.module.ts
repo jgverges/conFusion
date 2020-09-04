@@ -6,13 +6,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-/* import { HttpModule } from '@angular/http';
- */import { baseURL } from './shared/baseurl';
+/* import { HttpModule } from '@angular/http'; */
+import { baseURL } from './shared/baseurl';
 import { ReactiveFormsModule } from '@angular/forms';
 // services
 import { DishService } from './services/dish.service';
 import { PromotionService } from './services/promotion.service';
 import { LeaderService } from './services/leader.service';
+import { ProcessHTTPMsgService} from './services/process-httpmsg.service';
 // Components
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -63,8 +64,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FontAwesomeModule,
     FormsModule,
     HttpClientModule,
-/*     HttpModule,
- */    MatButtonModule,
+/*     HttpModule, */
+    MatButtonModule,
     MatCardModule,
     MatCheckboxModule,
     MatDialogModule,
@@ -82,8 +83,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   ],
   providers: [ 
     DishService, 
-    PromotionService, 
     LeaderService,
+    ProcessHTTPMsgService,
+    PromotionService, 
     { provide: 'BaseURL', useValue : baseURL} 
   ],
   entryComponents: [
