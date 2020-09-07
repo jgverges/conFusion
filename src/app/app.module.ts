@@ -42,6 +42,7 @@ import { MatCheckboxModule} from '@angular/material/checkbox';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
  // flex
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HighlightDirective } from './directives/highlight.directive';
 
 
 @NgModule({
@@ -54,7 +55,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     HomeComponent,
     ContactComponent,
     AboutComponent,
-    LoginComponent
+    LoginComponent,
+    HighlightDirective
   ],
   imports: [
     AppRoutingModule,
