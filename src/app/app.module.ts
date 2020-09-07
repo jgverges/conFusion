@@ -66,7 +66,7 @@ import { HighlightDirective } from './directives/highlight.directive';
     FontAwesomeModule,
     FormsModule,
     HttpClientModule,
-/*     HttpModule, */
+    /* HttpModule, */
     MatButtonModule,
     MatCardModule,
     MatCheckboxModule,
