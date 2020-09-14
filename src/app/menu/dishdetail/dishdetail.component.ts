@@ -140,8 +140,6 @@ export class DishdetailComponent implements OnInit {
       rating: 5,
       date: ''
     });
-/*     this.feedbackFormDirective.resetForm();
-    this.createForm();
- */  }
+ }
 
 }
