@@ -48,7 +48,5 @@ export function expand() {
                 transform : 'tranlateX(0)'
             }))
         ])
-
-
     ])
 }
